@@ -34,6 +34,8 @@ export const ProfileScreen = () => {
     const [{ loadingUpdate }, dispatch] = useReducer(reducer, {
       loadingUpdate: false,
     });
+    console.log(loadingUpdate);
+    
     const submitHandler = async (e) => {
       e.preventDefault();
        password !== confirmPassword

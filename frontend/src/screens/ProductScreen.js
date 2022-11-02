@@ -32,6 +32,7 @@ export const ProductScreen = () => {
   const params = useParams();
   const { slug } = params;
 
+  console.log(params, "paramsssssss")
   const [{ loading, error, product }, dispatch] = useReducer(reducer, {
     product: [],
     loading: true,
@@ -51,7 +52,7 @@ export const ProductScreen = () => {
     };
     fetchData();
   }, [slug]);
-
+console.log(slug, "slug")
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const { cart } = state;
 

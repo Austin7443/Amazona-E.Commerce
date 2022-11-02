@@ -13,9 +13,9 @@ const data = {
       description: "high quality product",
     },
     {
-      name: "Adidas Fit Pant",
-      slug: "adidas-fit-pant",
-      category: "pants",
+      name: "Adidas Fit Shirt",
+      slug: "adidas-fit-shirt",
+      category: "shirt",
       image: "/images/pl2.jpg",
       price: 65,
       countInStock: 5,

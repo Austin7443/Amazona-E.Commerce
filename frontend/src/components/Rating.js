@@ -3,7 +3,7 @@ import { BsStarFill } from "react-icons/bs";
 import { IoIosStarHalf } from "react-icons/io";
 import { ImStarEmpty } from "react-icons/im";
 
-export const Rating = ({ numReviews, rating }) => {
+export const Rating = ({ numReviews, rating, caption }) => {
   return (
     <div className="rating">
       <span>
@@ -51,8 +51,11 @@ export const Rating = ({ numReviews, rating }) => {
           <ImStarEmpty />
         )}
       </span>
-      <span>{numReviews} reviews</span>
-
+      {caption ? (
+        <span>{caption}</span>
+      ) : (
+        <span>{" " + numReviews + " reviews"}</span>
+      )}
     </div>
   );
 };

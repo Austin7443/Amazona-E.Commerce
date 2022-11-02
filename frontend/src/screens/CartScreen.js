@@ -32,6 +32,7 @@ export const CartScreen = () => {
       payload: { ...item, quantity },
     });
   };
+    console.log(cartItems, "mmmm");
 
   const removeItemHandler = (item) => {
     ctxDispatch({ type: "CART_REMOVE_ITEM", payload: item });
